@@ -14,6 +14,8 @@
     <link rel="shortcut icon" href="favicon.ico">
     <!-- CSS Template -->
     <link href="static/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/vendor/glightbox-master/dist/css/glightbox.min.css"/>
+
 </head>
 
 <body>
@@ -66,7 +68,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-white">
                 <div class="container">
                     <!-- Logo -->
-                    <a class="navbar-brand" href="index-2.html">
+                    <a class="navbar-brand" href="">
                         <img src="static/img/logo.png" title="" alt="">
                         <!-- <h1>PROPERCON</h1> -->
                     </a>
@@ -82,28 +84,27 @@
                             <li class="nav-item">
                                 <a href="index-2.html" class="nav-link">Home</a>
                             </li>
+
+                            <li class="nav-item">
+                                <a href="#about" class="nav-link">About Us</a>
+                            </li>
                             
-                            <li class="dropdown nav-item">
-                                <a href="#" class="nav-link">Services</a>
-                                <label class="dropdown-toggle mob-menu" data-bs-toggle="dropdown"></label>
-                                <div class="dropdown-menu shadow-lg">
-                                    <a class="dropdown-item" href="services.html">Services</a>
-                                    <a class="dropdown-item" href="services-details.html">Services Detail</a>
-                                </div>
+                            <li class="nav-item">
+                                <a href="#services" class="nav-link">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a href="index-2.html" class="nav-link">Portfolio</a>
+                                <a href="#portfolio" class="nav-link">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a href="contact-us.html" class="nav-link">
+                                <a href="#contact-us" class="nav-link">
                                     Contact Us
                                 </a>
                             </li>
                         </ul>
                         <div class="extra-menu d-none d-lg-block ps-4">
-                            <a class="btn btn-primary btn-sm" href="#">
+                            <a class="btn btn-primary btn-sm" href="#contact-us">
                                 <span class="fas fa-phone fa-rotate-90"></span>
-                                <span class="btn--text">Call now</span>
+                                <span class="btn--text">Request a Quote</span>
                             </a>
                         </div>
                     </div>
@@ -162,11 +163,11 @@
         </div>
         <!-- End Home Banner -->
         <!-- Section -->
-        <section class="section">
+        <section class="section" id="about">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 my-3 pe-lg-12">
-                        <h6 class="text-primary">Where Can We Help You</h6>
+                        <h6 class="text-primary">About Us</h6>
                         <h3 class="h1">Welcome To Propercon Construction Solutions.</h3>
                         <p class="lead">Propercon is a construction company founded in 2016, based on strong principles of integrity and excellence.</p>
                         <ul class="list-type-01 pt-2">
@@ -198,7 +199,7 @@
         </section>
         <!-- End Section -->
         <!-- Section -->
-        <section class="section bg-gray-100">
+        <section class="section bg-gray-100" id="services">
             <div class="container">
                 <div class="row justify-content-center section-heading">
                     <div class="col-lg-8 col-xl-7 text-center">
@@ -249,7 +250,7 @@
                                     <i class="number fst-normal">4</i>
                                 </div>
                                 <h5 class="mb-3">Project Management</h5>
-                                <p class="m-0px">Coordinating all aspects of a construction project, ensuring it is completed on time, within budget, and to the required standards.</p>
+                                <p class="m-0px">Coordinating all aspects of a construction project, ensuring it is completed on time, within budget.</p>
                             </div>
                         </div>
                     </div>
@@ -277,68 +278,123 @@
                     </div>
 
                 </div>
+
+                <div class="pt-5">
+                    <a class="btn btn-primary" href="#" style="float: right;">
+                        <span class="btn--text">View More Services</span>
+                        <span class="arrow"></span>
+                    </a>
+                </div> 
+                <div class="clearfix"></div>
             </div>
         </section>
         <!-- End Section -->
         <!-- Section -->
-        <section class="section">
+        <section class="section" id="portfolio">
             <div class="container">
                 <div class="row justify-content-center section-heading">
                     <div class="col-lg-8 col-xl-7 text-center">
                         <h6 class="text-primary">Our Work</h6>
                         <h3 class="h1">Explore Recent Projects</h3>
-                        <div class="lead">Dome is a HTML5 template based on Sass and Bootstrap 5 with modern and creative multipurpose design you can use it as a startups.</div>
+                        <div class="lead">See how Propercon brings visions to life with precision, quality, and innovation across diverse construction endeavors.</div>
                     </div>
                 </div>
+
+
                 <div class="row">
-                    <div class="col-lg-4 my-3">
-                        <div class="feature-hover-2 shadow">
-                            <div class="feature-icon">
-                                <img src="static/img/project-1.jpg" title="" alt="">
-                            </div>
-                            <div class="feature-content d-flex align-items-end justify-content-center p-3">
-                                <div class="bg-white p-4 w-100">
-                                    <small class="font-w-500">Pxdraft Studio</small>
-                                    <h4 class="m-0 pt-2">Our solution for your business.</h4>
-                                    <div class="pt-3 btn-bar">
-                                        <a class="btn btn-primary btn-sm" href="#">View Projects</a>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="col-lg-12 my-3">
+                        <div class="gallery">
+
+                    
+                            <a href="static/img/our_projects/1.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/1.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/2.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/2.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/3.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/3.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/4.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/4.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/5.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/5.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/6.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/6.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/7.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/7.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/8.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/8.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/9.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/9.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/10.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/10.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/11.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/11.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/12.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/12.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/13.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/13.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/14.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/14.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/15.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/15.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/16.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/16.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/17.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/17.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/18.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/18.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/19.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/19.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/20.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/20.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/21.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/21.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/22.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/22.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/23.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/23.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/24.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/24.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/25.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/25.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/26.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/26.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/27.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/27.jpeg" alt="Image 1">
+                            </a>
+                            <a href="static/img/our_projects/28.jpeg" class="glightbox" data-gallery="gallery1">
+                                <img src="static/img/our_projects/28.jpeg" alt="Image 1">
+                            </a>
+                            
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 my-3">
-                        <div class="feature-hover-2 shadow">
-                            <div class="feature-icon">
-                                <img src="static/img/project-2.jpg" title="" alt="">
-                            </div>
-                            <div class="feature-content d-flex align-items-end justify-content-center p-3">
-                                <div class="bg-white p-4 w-100">
-                                    <small class="font-w-500">Pxdraft Studio</small>
-                                    <h4 class="m-0 pt-2">Our solution for your business.</h4>
-                                    <div class="pt-3 btn-bar">
-                                        <a class="btn btn-primary btn-sm" href="#">View Projects</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 my-3">
-                        <div class="feature-hover-2 shadow">
-                            <div class="feature-icon">
-                                <img src="static/img/project-3.jpg" title="" alt="">
-                            </div>
-                            <div class="feature-content d-flex align-items-end justify-content-center p-3">
-                                <div class="bg-white p-4 w-100">
-                                    <small class="font-w-500">Pxdraft Studio</small>
-                                    <h4 class="m-0 pt-2">Our solution for your business.</h4>
-                                    <div class="pt-3 btn-bar">
-                                        <a class="btn btn-primary btn-sm" href="#">View Projects</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
+                    
                 </div>
             </div>
         </section>
@@ -347,7 +403,7 @@
         
         
         <!-- Section -->
-        <section class="section bg-gray-100">
+        <!-- <section class="section bg-gray-100">
             <div class="container">
                 <div class="row justify-content-center section-heading">
                     <div class="col-lg-8 col-xl-7 text-center">
@@ -447,51 +503,68 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- End Section -->
         <!-- Section -->
         <section class="counter section effect-section parallax" style="background-image: url(static/img/bg-3.jpg);">
-            <div class="mask bg-dark opacity-3"></div>
-            <div class="container position-relative">
-                <div class="row">
-                    <div class=" col-6 col-lg-3 col-md-6 my-3">
-                        <div class="text-center">
-                            <div class="only-icon only-icon-lg d-inline-block mb-3 text-white">
-                                <i class="icon-desktop"></i>
-                            </div>
-                            <h6 class="count h3 mb-2 text-white" data-to="4506" data-speed="4506">4506</h6>
-                            <span class="text-white">Project Complated</span>
+            <!-- <div class="mask bg-dark opacity-3"></div> -->
+
+            <!-- contact us Start -->
+            <div id="contact-us" class="container-fluid donate " data-parallax="scroll" data-image-src="assets/media/img/carousel-2.jpg">
+                <div class="container ">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="d-inline-block rounded-pill bg-white text-primary py-1 px-3 mb-3">Contact Us</div>
+                            <h1 class="display-6 text-white mb-5">If You Have Any Query, Please Contact Us</h1>
+                            <h4 class="display-8 text-white mb-5">Tel: +27 65 695 4569</h4>
+                            <h4 class="display-8 text-white mb-5">Whatsapp: +27 65 695 4569</h4>
                         </div>
-                    </div>
-                    <div class=" col-6 col-lg-3 col-md-6 my-3">
-                        <div class="text-center">
-                            <div class="only-icon only-icon-lg d-inline-block mb-3 text-white">
-                                <i class="icon-camera"></i>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="h-100 bg-white p-5">
+                                <form method="post" action="https://formsubmit.co/propercon0@gmail.com">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" name="fullname">
+                                                <label for="name">Your Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <input type="email" name="email" class="form-control">
+                                                <label for="email">Your Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <input type="text" name="contact_number" class="form-control">
+                                                <label for="subject">Contact Number</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <input type="textarea" name="message" class="form-control">
+                                                <label for="message">Message</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary py-2 px-3 me-3">
+                                                Send Message
+                                                <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                            <h6 class="count h3 mb-2 text-white" data-to="1580" data-speed="1580">1580</h6>
-                            <span class="text-white">Work Employed</span>
-                        </div>
-                    </div>
-                    <div class=" col-6 col-lg-3 col-md-6 my-3">
-                        <div class="text-center">
-                            <div class="only-icon only-icon-lg d-inline-block mb-3 text-white">
-                                <i class="icon-laptop"></i>
-                            </div>
-                            <h6 class="count h3 mb-2 text-white" data-to="1280" data-speed="1280">1280</h6>
-                            <span class="text-white">Happy Customers</span>
-                        </div>
-                    </div>
-                    <div class=" col-6 col-lg-3 col-md-6 my-3">
-                        <div class="text-center">
-                            <div class="only-icon only-icon-lg d-inline-block mb-3 text-white">
-                                <i class="icon-chat"></i>
-                            </div>
-                            <h6 class="count h3 mb-2 text-white" data-to="9642" data-speed="9642">9642</h6>
-                            <span class="text-white">Painting Services</span>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- contant us End -->
+            
+ 
         </section>
         <!-- End Section -->
         <!-- Section -->
@@ -499,8 +572,8 @@
             <div class="container">
                 <div class="row justify-content-center section-heading">
                     <div class="col-lg-8 col-xl-7 text-center">
-                        <h6 class="text-primary">Our Clients Say</h6>
-                        <h3 class="h1">Clients Say About Us</h3>
+                        <h6 class="text-primary">Testimonials</h6>
+                        <h3 class="h1">What Our Clients Say</h3>
                         <div class="lead">Dome is a HTML5 template based on Sass and Bootstrap 5 with modern and creative multipurpose design you can use it as a startups.</div>
                     </div>
                 </div>
@@ -560,43 +633,44 @@
                 <div class="row">
                     <div class="col-lg-3 my-4">
                         <img src="static/img/logo.png" title="" alt="">
-                        <p class="text-white-50 pt-4 w-80 m-0">Lorem Ipsum is simply dummied text of the printing and typesetting industry.</p>
+                        <p class="text-white-50 pt-4 w-80 m-0">Propercon is a construction company founded in 2016, based on strong principles of integrity and excellence.</p>
                     </div>
-                    <div class="col-md-6 col-lg-2 my-4">
-                        <h5 class="text-white mb-3">Useful</h5>
+                    <div class="col-md-6 col-lg-3 my-4">
+                        <h5 class="text-white mb-3">Useful Links</h5>
                         <ul class="list-unstyled white-link footer-links">
+                            
                             <li>
-                                <a href="#">Apps Store</a>
+                                <a href="#about">About Us</a>
                             </li>
                             <li>
-                                <a href="#">Google Store</a>
+                                <a href="#services">Services</a>
                             </li>
                             <li>
-                                <a href="#">Latest News</a>
+                                <a href="#portfolio">Portfolio</a>
                             </li>
                             <li>
-                                <a href="#">Our Blog</a>
+                                <a href="#">Contact Us</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-6 col-lg-2 my-4">
-                        <h5 class="text-white mb-3">Our serive</h5>
+                    <div class="col-md-6 col-lg-3 my-4">
+                        <h5 class="text-white mb-3">Important Links</h5>
                         <ul class="list-unstyled white-link footer-links">
                             <li>
-                                <a href="#">Apps Store</a>
+                                <a href="#">Terms of Use</a>
                             </li>
                             <li>
-                                <a href="#">Google Store</a>
+                                <a href="#">Privacy Policy</a>
                             </li>
                             <li>
-                                <a href="#">Latest News</a>
+                                <a href="#">Website Privacy Policy</a>
                             </li>
                             <li>
-                                <a href="#">Our Blog</a>
+                                <a href="#">Cookie Policy</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-6 col-lg-2 my-4">
+                    <!-- <div class="col-md-6 col-lg-2 my-4">
                         <h5 class="text-white mb-3">More Links</h5>
                         <ul class="list-unstyled white-link footer-links">
                             <li>
@@ -612,7 +686,7 @@
                                 <a href="#">Our Blog</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                     <div class="col-md-6 col-lg-3 my-4">
                         <h5 class="text-white mb-5">Contact Us</h5>
                         <ul class="list-unstyled white-link footer-links">
@@ -622,7 +696,7 @@
                                         <i class="icon-map"></i>
                                     </div>
                                     <span class="media-body ps-3">
-                                        301 The Greenhouse, <br>Custard Factory, LD, E2 8DY
+                                        01 Propercon Street, <br>JHB
                                     </span>
                                 </a>
                             </li>
@@ -632,7 +706,7 @@
                                         <i class="icon-envelope"></i>
                                     </div>
                                     <span class="media-body ps-3">
-                                        info@domain.com
+                                        propercon0@gmail.com
                                     </span>
                                 </a>
                             </li>
@@ -642,7 +716,7 @@
                                         <i class="icon-phone"></i>
                                     </div>
                                     <span class="media-body ps-3">
-                                        1-800-222-000
+                                        +27 65 695 4569
                                     </span>
                                 </a>
                             </li>
@@ -654,7 +728,7 @@
         <div class="footer-bottom border-style top light">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-6 my-3">
+                    <div class="col-md-4 my-3">
                         <div class="nav justify-content-center justify-content-md-start">
                             <a class="icon icon-sm icon-primary rounded-circle me-2" href="#">
                                 <i class="fab fa-facebook-f"></i>
@@ -670,8 +744,11 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-6 my-3 text-center text-md-end">
-                        <p class="m-0 text-white-50">© 2021 copyright <a href="pxdraft.html">pxdraft</a></p>
+                    <div class="col-md-4 my-3">
+                        <span>Design by <a href="https://ayandak.netlify.app/">Ayanda Khanyile</a></span>
+                    </div>
+                    <div class="col-md-4 my-3 text-center text-md-end">
+                        <p class="m-0 text-white-50">© 2024 copyright <a href="">Propercon</a></p>
                     </div>
                 </div>
             </div>
@@ -697,9 +774,16 @@
     <script src="static/vendor/mail/js/script.js"></script>
     <!-- Theme Js -->
     <script src="static/js/custom.js"></script>
+
+    <script type="text/javascript" src="static/vendor/glightbox-master/dist/js/glightbox.min.js"></script>
+
+    <script type="text/javascript">
+    
+        const lightbox = GLightbox();
+      
+    </script>
+
 </body>
 <!-- end body -->
 
-
-<!-- Mirrored from www.pxdraft.com/wrap/dome/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 Jun 2024 10:29:38 GMT -->
 </html>

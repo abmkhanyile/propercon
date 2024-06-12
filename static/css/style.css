@@ -13275,3 +13275,33 @@ article .lightbox-gallery {
   border-top: 1px solid rgba(255, 255, 255, 0.1); }
   .footer .footer-border.dark {
     border-top: 1px solid rgba(2, 4, 15, 0.1); }
+
+    
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  /* padding: 20px; */
+}
+
+.gallery a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery img {
+  /* width: 100%;
+  height: auto; */
+  width: 100%; /* Ensures the image does not exceed the width of its container */
+  height: 100%; /* Ensures the image does not exceed the height of its container */
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery a:hover img {
+  transform: scale(1.1);
+}
